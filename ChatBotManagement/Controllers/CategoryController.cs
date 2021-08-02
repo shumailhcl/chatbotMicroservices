@@ -18,7 +18,6 @@ namespace ChatBotManagement.Controllers
    [Authorize]
     public class CategoryController : ControllerBase
     {
-
         ChatBotContext _chatbotContext;
         public CategoryController(ChatBotContext chatbotContext)
         {
