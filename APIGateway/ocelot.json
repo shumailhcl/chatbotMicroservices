@@ -1,0 +1,37 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/getCategoryList",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44376
+        }
+      ],
+      "UpstreamPathTemplate": "/getCategoryList",
+      "UpstreamHttpMethod": [ "GET" ]
+
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/getCategoryList/{categoryId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44376
+        }
+      ],
+      "UpstreamPathTemplate": "/getSubCategoryList/{categoryId}",
+      "UpstreamHttpMethod": [ "GET" ]
+
+
+
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44387"
+  }
+}
